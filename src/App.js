@@ -108,7 +108,7 @@ const handleBookClick = (book) => {
   <div>
     <NavbarEx search={search}/>
     <Container>
-    <BrowserRouter basename="/test">
+    <BrowserRouter basename="/Library-website-react">
     <Routes>
     <Route path='/' element={ <BooksCard handleBookClick={handleBookClick} books={books} getPage={getPage} pageCount={pageCount}/>}/>
     <Route path='/book/:id' element={<BookDetails book={selectedBook} />} />
