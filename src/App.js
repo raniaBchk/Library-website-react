@@ -29,7 +29,7 @@ function App() {
 
     // 1 get current page et l'envoyer comme prop à booksCard 
     const getPage=async (page)=>{
-      const res=await axios.get(`https://www.googleapis.com/books/v1/volumes?q=react&maxResults=12&page=${page}&key=AIzaSyBvXivlMuKFMNoPqTXqL55DVhmfB_7kYl4`)
+      const res=await axios.get(`https://www.googleapis.com/books/v1/volumes?q=a&maxResults=12&page=${page}&key=AIzaSyBvXivlMuKFMNoPqTXqL55DVhmfB_7kYl4`)
       setTotalItems(res.data.totalItems)
     }
  
